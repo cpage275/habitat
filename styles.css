@@ -14,7 +14,6 @@ body, html {
 
   }
   
-  /* Let the image be the thing that defines width */
   #bg-img {
     height: 100%;
     width: auto;
@@ -26,37 +25,31 @@ body, html {
   }
 
 
-  /* Add these styles to your existing CSS */
-
-/* Prevent all selection in the document */
+  
 body {
-  -webkit-user-select: none;  /* Safari */
-  -ms-user-select: none;      /* IE 10+ */
-  user-select: none;          /* Standard syntax */
+  -webkit-user-select: none; 
+  -ms-user-select: none;     
+  user-select: none;         
 }
 
-/* Prevent dragging of images */
 img {
   -webkit-user-drag: none;
   -khtml-user-drag: none;
   -moz-user-drag: none;
   -o-user-drag: none;
   user-drag: none;
-  pointer-events: none;  /* This prevents image dragging in most browsers */
+  pointer-events: none; 
 }
 
-/* Disable the default dragging behavior for all elements */
 * {
   draggable: false;
 }
 
-/* Optional: Remove the blue "flash" highlight that appears when clicking on mobile */
 * {
   -webkit-tap-highlight-color: transparent;
 }
   
   
-  /* Fish icon and modal styles (same as before) */
   .fish-icon {
     position: absolute;
     width: 100px;
@@ -66,18 +59,17 @@ img {
     pointer-events: auto;
   }
   
-/* Override only for genome modal */
 #modal-genome .modal-content {
   overflow-y: auto;
   overflow-x: hidden;
-  height: auto;         /* override fixed height */
-  max-height: 439px;    /* constraint for scrolling */
+  height: auto;        
+  max-height: 439px;    
 }
 
 
 #modal-genome .modal-content img {
   width: 100%;
-  height: auto;         /* let it grow naturally */
+  height: auto;         
   display: block;
 }
 
@@ -86,14 +78,14 @@ img {
 #modal-cladogram .modal-content {
   overflow-y: auto;
   overflow-x: auto;
-  height: auto;         /* override fixed height */
-  max-height: 439px;    /* constraint for scrolling */
+  height: auto;         
+  max-height: 439px;    
 }
 
 
 #modal-cladogram .modal-content img {
   width: 200%;
-  height: auto;         /* let it grow naturally */
+  height: auto;        
   display: block;
 }
 
@@ -113,14 +105,13 @@ img {
 
   text-shadow: 0px 1px 0px rgba(0, 0, 0, 0.9);
   padding: 2px ;
-  display: inline-block; /* This makes the element only as wide as its content */
-  width: auto; /* Allow width to be determined by content */
+  display: inline-block; 
+  width: auto; 
 }
 
-/* Caption container to help with centering */
 .caption-container {
   margin-top: 4px;
-  text-align: center; /* Centers the inline-block caption */
+  text-align: center; 
   width: 100%;
 }
 
@@ -175,7 +166,6 @@ img {
 }
 
 
-  /* Hover trigger area over the red dot (same size as icon) */
   .close-container {
     position: absolute;
     top: 19px;
@@ -186,7 +176,6 @@ img {
     pointer-events: auto;
   }
   
-  /* Hidden close icon inside container */
   .close-icon {
     width: 14px;
     height: 14px;
@@ -198,7 +187,6 @@ img {
     pointer-events: auto;
   }
   
-  /* Show only when hovering the red dot hitbox */
   .close-container:hover .close-icon {
     display: block;
   }
@@ -210,13 +198,11 @@ img {
 
 
 
-  /* Add this to your existing CSS */
 
 
 
-/* Highlighted caption style */
 .caption.highlighted {
-  background-color: #0069d9; /* Bright blue color matching your example */
+  background-color: #0069d9; 
   color: white;
   border-radius: 4px;
   padding: 2px ;
